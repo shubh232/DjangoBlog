@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'loguser',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -125,4 +126,5 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(BASE_DIR, 'mysite/templates'),
+    os.path.join(BASE_DIR, 'loguser/templates'),
 )
