@@ -14,11 +14,14 @@
     <meta charset="UTF-8">
     <title>Register Form</title>
 </head>
-<body background="{% static 'img/register.jpg' %}">
-    <h1 align="left"><strong>Register</strong>
-    </h1>
+<body>
+<div id="bg">
+  <img src="{% static 'img/register.jpg' %}" alt="">
+</div>
     <div class="row">
-        <div class="col-md-6">
+        <h1 align="left"><strong>Register</strong>
+        </h1>
+        <div class="col-xs-12 col-sm-6 col-md-8">
             <form action="." method="post">
                 {% csrf_token %}
                 {{ form|crispy }}
