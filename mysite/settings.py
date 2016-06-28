@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'loguser',
 )
 
@@ -128,3 +129,4 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'mysite/templates'),
     os.path.join(BASE_DIR, 'loguser/templates'),
 )
+CRISPY_TEMPLATE_PACK = 'bootstrap3'

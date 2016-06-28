@@ -1,6 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-
 class RegForm(UserCreationForm):
     class Meta:
         model = User
