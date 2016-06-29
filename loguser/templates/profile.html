@@ -9,9 +9,7 @@
     {% else %}
     <p>Please login to see this page.</p>
     {% endif %}
-{% if user.is_authenticated %}
-     <p>Welcome {{ user.username }}</p>
 {% endif %}
-<a href="/profile/newart">Create Article</a>
+<a href="/accounts/profile/newart">Create Article</a>
 </body>
 </html>
