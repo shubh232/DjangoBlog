@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+</head>
+<body> {% if user.is_authenticated %}
+    <p>Welcome {{ user.username }}</p>
+    {% else %}
+    <p>Please login to see this page.</p>
+    {% endif %}
+{% if user.is_authenticated %}
+     <p>Welcome {{ user.username }}</p>
+{% endif %}
+<a href="/profile/newart">Create Article</a>
+</body>
+</html>
