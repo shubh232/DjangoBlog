@@ -8,10 +8,5 @@
 <form method="post" action=".">
     {{ form }}
 </form>
-{% if user.is_authenticated %}
-    <p>Welcome {{ user.username }}</p>
-    {% else %}
-    <p>Please login to see this page.</p>
-    {% endif %}
 </body>
 </html>

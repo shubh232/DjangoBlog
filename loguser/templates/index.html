@@ -112,9 +112,5 @@
     <script src="{% static 'js/creative.js' %}"></script>
 
 </body>
-{% if user.is_authenticated %}
-    <p>Welcome {{ user.username }}</p>
-    {% else %}
-    <p>Please login to see this page.</p>
-    {% endif %}
+
 </html>
