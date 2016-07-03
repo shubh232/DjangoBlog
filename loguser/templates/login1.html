@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
 {% load crispy_forms_tags %}
 {% block content %}
     div class="row">
@@ -7,16 +6,17 @@
             <div class="col-lg-12">
               <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-8">
-        <h1 align="center"><strong>Create Article</strong>
-</h1>
+        <h1 align="center"><strong>Login</strong>
+        </h1>
             <form action="." method="post">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <input class="btn btn-primary" type="SUBMIT" value="Create Article" align="center"/>
+                <input class="btn btn-primary" type="SUBMIT" value="Login" align="center"/>
             </form>
         </div>
     </div>
             </div>
         </div>
     </div>
+
 {% endblock %}
