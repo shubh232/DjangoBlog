@@ -31,6 +31,10 @@ hr {
     border-color: #999999;
 }
 
+p.test{
+    width: 50em;
+    word-wrap: normal;
+}
 .brand,
 .address-bar {
     display: none;
@@ -84,6 +88,12 @@ hr {
     font-size: 1.25em;
     font-weight: 400;
     letter-spacing: 1px;
+}
+.title-text {
+    text-transform: uppercase;
+    font-size: 3.50em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
 }
 
 .img-border {
