@@ -20,7 +20,7 @@ urlpatterns = patterns('',
     url(r'^accounts/profile/allposts/(?P<slug>[^/]+)/$', ArticleView.as_view()),
     url(r'^accounts/profile/$',login_required(Landing.as_view())),
     url(r'^accounts/profile/allposts/$',login_required(AllPosts.as_view()),name='allposts'),
-    url(r'^accounts/profile/newart/$',NewArt.as_view()),
+    url(r'^accounts/profile/newart/$',login_required(NewArt.as_view())),
     url(r'^accounts/profile/logout/$',logout,{'next_page':'/login/'})
 )
 
