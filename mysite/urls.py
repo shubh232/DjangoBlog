@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from loguser.views import Regis,NewArt,Landing,AllPosts,ArticleView
+from loguser.views import Regis,NewArt,Landing,AllPosts,ArticleView,MyPosts,MyPostsQuery
 from mysite.views import Index , Check
 from django.views.generic import TemplateView
 from django.contrib.auth.views import login,logout
@@ -20,6 +20,8 @@ urlpatterns = patterns('',
     url(r'^accounts/profile/allposts/(?P<slug>[^/]+)/$', ArticleView.as_view()),
     url(r'^accounts/profile/$',login_required(Landing.as_view())),
     url(r'^accounts/profile/allposts/$',login_required(AllPosts.as_view()),name='allposts'),
+    url(r'^accounts/profile/myposts/$', login_required(MyPosts.as_view()), name='myposts'),
+    url(r'^accounts/profile/mypostsq/$', login_required(MyPostsQuery.as_view()), name='mypostsq'),
     url(r'^accounts/profile/newart/$',login_required(NewArt.as_view())),
     url(r'^accounts/profile/logout/$',logout,{'next_page':'/login/'})
 )
